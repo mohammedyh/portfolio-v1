@@ -1,0 +1,59 @@
+@use "vars";
+@use "mixins";
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans-Regular.ttf') format('truetype');
+  font-style: normal; /* stylelint-disable-line order/properties-order */
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans-Medium.ttf') format('truetype');
+  font-style: normal; /* stylelint-disable-line order/properties-order */
+  font-weight: 500;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background: vars.$accent-color;
+  color: black;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  @include mixins.reduced-motion {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: vars.$font-primary;
+  font-size: 2rem;
+}
+
+a {
+  color: vars.$text-primary;
+  text-decoration: none;
+  transition: color 250ms ease-in-out;
+  @include mixins.reduced-motion {
+    transition: none;
+  }
+
+  &:hover {
+    color: vars.$accent-color;
+  }
+
+  &:focus {
+    color: vars.$accent-color;
+  }
+}

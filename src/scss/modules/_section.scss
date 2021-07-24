@@ -1,0 +1,36 @@
+@use "../base/vars";
+@use "../base/mixins";
+
+.section {
+  padding: 6rem 0;
+  color: vars.$text-primary;
+  font-size: 2.2rem;
+  text-align: center;
+
+  &__title::after {
+    display: block;
+    width: 4.2rem;
+    height: 4px;
+    margin: 0.5rem auto;
+    margin-bottom: 3rem;
+    background-color: vars.$accent-color;
+    content: '';
+  }
+
+  &__subtitle {
+    max-width: 110rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin: auto;
+    line-height: 1.6;
+    @include mixins.mobile {
+      font-size: 2rem;
+      line-height: 1.9;
+    }
+  }
+}
+
+.section:nth-child(even) {
+  background: #444;
+  color: white;
+}

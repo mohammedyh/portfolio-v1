@@ -1,0 +1,29 @@
+@use "../base/vars";
+@use "../base/mixins";
+
+.about {
+  .skills {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    @include mixins.mobile {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+      place-content: center;
+    }
+    @include mixins.tablet {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+      place-content: center;
+    }
+
+    &__row {
+      margin: 1rem;
+      text-align: left;
+
+      li {
+        margin: 5rem;
+      }
+    }
+  }
+}
