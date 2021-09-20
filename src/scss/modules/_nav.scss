@@ -13,6 +13,7 @@
 
   .logo-container {
     padding: 4.5rem 8rem;
+    letter-spacing: 0.5px;
     @include mixins.mobile {
       display: none;
     }
@@ -31,6 +32,10 @@
 
       li {
         margin-left: 3rem;
+        @include mixins.mobile {
+          margin-left: 1.8rem;
+          font-size: 1.8rem;
+        }
       }
 
       li:first-child {
