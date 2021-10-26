@@ -3,6 +3,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+robots.txt
 
 # Icon must end with two \r
 Icon
@@ -38,4 +39,3 @@ dist/
 *.css.map
 *.sass.map
 *.scss.map
-
