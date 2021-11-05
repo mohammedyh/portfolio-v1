@@ -1,5 +1,5 @@
 {
-  "name": "parcel-portfolio",
+  "name": "personal-site",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,7 +15,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.3",
+    "@parcel/transformer-sass": "^2.0.0",
+    "parcel": "^2.0.0",
     "prettier": "^2.2.1",
     "sass": "^1.32.8",
     "stylelint": "^13.13.1",
@@ -24,5 +25,8 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-prettier": "^1.2.0",
     "stylelint-scss": "^3.19.0"
+  },
+  "dependencies": {
+    "@parcel/compressor-brotli": "^2.0.0"
   }
 }
