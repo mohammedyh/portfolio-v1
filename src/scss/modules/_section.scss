@@ -27,6 +27,9 @@
       font-size: 2rem;
       line-height: 1.9;
     }
+    @include mixins.large-desktop {
+      max-width: 90%;
+    }
   }
 }
 

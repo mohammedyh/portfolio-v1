@@ -1,4 +1,10 @@
+@use "../base/vars";
+@use "../base/mixins";
+
 .contact .section__subtitle {
-  max-width: 90rem;
+  max-width: 95rem;
   margin-bottom: 4rem;
+  @include mixins.large-desktop {
+    max-width: 90%;
+  }
 }

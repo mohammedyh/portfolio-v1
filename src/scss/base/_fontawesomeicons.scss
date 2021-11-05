@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../fonts/fa-brands-400.eot);
+  src: url(../fonts/fa-brands-400.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/fa-brands-400.woff2) format('woff2'),
+    url(../fonts/fa-brands-400.woff) format('woff'),
+    url(../fonts/fa-brands-400.ttf) format('truetype'),
+    url(../fonts/fa-brands-400.svg#fontawesome) format('svg');
+}
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../fonts/fa-regular-400.eot);
+  src: url(../fonts/fa-regular-400.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/fa-regular-400.woff2) format('woff2'),
+    url(../fonts/fa-regular-400.woff) format('woff'),
+    url(../fonts/fa-regular-400.ttf) format('truetype'),
+    url(../fonts/fa-regular-400.svg#fontawesome) format('svg');
+}
+.fab,
+.far {
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(../fonts/fa-solid-900.eot);
+  src: url(../fonts/fa-solid-900.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/fa-solid-900.woff2) format('woff2'),
+    url(../fonts/fa-solid-900.woff) format('woff'),
+    url(../fonts/fa-solid-900.ttf) format('truetype'),
+    url(../fonts/fa-solid-900.svg#fontawesome) format('svg');
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+.fa-xs {
+  font-size: 0.75em;
+}
+.fa-sm {
+  font-size: 0.875em;
+}
+.fa-1x {
+  font-size: 1em;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa,
+.far,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+}
+.fa,
+.fas {
+  font-weight: 900;
+}
+
+.fa-react:before {
+  content: '\f41b';
+}
+
+.fa-html5:before {
+  content: '\f13b';
+}
+
+.fa-css3-alt:before {
+  content: '\f38b';
+}
+
+.fa-github:before {
+  content: '\f09b';
+}
+
+.fa-linkedin:before {
+  content: '\f08c';
+}
+
+.fa-file-alt:before {
+  content: '\f15c';
+}
+
+.fa-link:before {
+  content: '\f0c1';
+}
+
+.fa-sass:before {
+  content: '\f41e';
+}
+
+.fa-js:before {
+  content: '\f3b8';
+}

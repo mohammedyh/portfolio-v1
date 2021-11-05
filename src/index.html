@@ -5,13 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="title" content="Mohammed-Yousuf Hamid">
-  <meta name="description"
-    content="A Full Stack Developer specialized in building exceptional web applications.">
+  <meta name="description" content="A Full Stack Developer specialized in building exceptional websites and applications.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://myhdigital.co.uk/">
   <meta property="og:title" content="Mohammed-Yousuf Hamid">
   <meta property="og:description"
-    content="A Full Stack Developer specialized in building exceptional web applications.">
+    content="A Full Stack Developer specialized in building exceptional websites and applications.">
   <meta property="og:image"
     content="https://og-image.vercel.app/**MYHDigital**.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fvercel-triangle-white.svg">
   <meta property="twitter:card" content="summary_large_image">
@@ -21,8 +20,6 @@
     content="Mohammed-Yousuf is a Full Stack Web Developer who specializes in building exceptional web experiences.">
   <meta property="twitter:image"
     content="https://og-image.vercel.app/**MYHDigital**.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fvercel-triangle-white.svg">
-  <link rel="shortcut icon" href="./img/favicon.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
   <link rel="stylesheet" href="scss/style.scss" />
   <title>Mohammed-Yousuf Hamid</title>
 </head>
@@ -60,6 +57,48 @@
     <h1 class="section__title">Work</h1>
 
     <div class="work__wrapper">
+
+      <!-- Blog Project -->
+      <div class="wrapper">
+        <article class="browser">
+          <div class="browser__header">
+            <span class="browser__header-button red"></span>
+            <span class="browser__header-button yellow"></span>
+            <span class="browser__header-button green"></span>
+          </div>
+
+          <div class="browser__container">
+            <img src="./img/personal-blog.png" alt="Crowdfunding Page project." loading="lazy" />
+          </div>
+        </article>
+
+        <div class="project">
+          <h2 class="project__title">Personal Blog</h2>
+          <p>
+            My personal blog built with Next.js and Tailwind CSS. Blog posts are rendered from Markdown and Prism.js is
+            used for syntax highlighting.
+          </p>
+
+          <div class="project__links">
+            <a href="https://blog.myhdigital.co.uk/" target="_blank" rel="noopener" class="button"><i
+                class="fas fa-link"></i>Live Site</a>
+          </div>
+
+          <div class="project__tags">
+            <button class="button tag">
+              <img class="tailwind-icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js icon."
+                width="30" loading="lazy" />Next.js
+            </button>
+            <button class="button tag">
+              <img class="tailwind-icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                alt="TailwindCSS icon." width="30" loading="lazy" />Tailwind
+            </button>
+          </div>
+        </div>
+      </div>
+
       <div class="wrapper">
         <article class="browser">
           <div class="browser__header">
@@ -76,8 +115,8 @@
         <div class="project">
           <h2 class="project__title">GitHub Finder</h2>
           <p>
-            This application uses the GitHub API to fetch users and their
-            three most recent repositories, along with stats for them.
+            Using the GitHub API, fetch the three most recent repositories for a user, along with their stars, watchers
+            and forks count.
           </p>
 
           <div class="project__links">
@@ -110,6 +149,50 @@
           </div>
 
           <div class="browser__container">
+            <img src="./img/crowdfunding-page.png" alt="Crowdfunding Page project." loading="lazy" />
+          </div>
+        </article>
+
+        <div class="project">
+          <h2 class="project__title">Crowdfunding Page</h2>
+          <p>
+            A Kickstarter inspired product landing page built with Tailwind CSS - project from <a
+              href="https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR"
+              rel="noreferrer noopener" target="_blank"> Frontend Mentor</a>.
+          </p>
+
+          <div class="project__links">
+            <a href="https://github.com/mohammedyh/crowdfunding-page" target="_blank" rel="noopener" class="button"><i
+                class="fab fa-github"></i>GitHub</a>
+            <a href="https://mohammedyh.github.io/crowdfunding-page/public" target="_blank" rel="noopener"
+              class="button"><i class="fas fa-link"></i>Live Site</a>
+          </div>
+
+          <div class="project__tags">
+            <button class="button tag">
+              <i class="fab fa-html5"></i>HTML
+            </button>
+            <button class="button tag">
+              <i class="fab fa-css3-alt"></i>CSS
+            </button>
+            <button class="button tag">
+              <img class="tailwind-icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                alt="TailwindCSS icon." width="30" loading="lazy" />Tailwind
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <article class="browser">
+          <div class="browser__header">
+            <span class="browser__header-button red"></span>
+            <span class="browser__header-button yellow"></span>
+            <span class="browser__header-button green"></span>
+          </div>
+
+          <div class="browser__container">
             <img src="./img/pomodoro-timer.png" alt="Pomodoro timer project." loading="lazy" />
           </div>
         </article>
@@ -117,8 +200,7 @@
         <div class="project">
           <h2 class="project__title">Pomodoro Timer</h2>
           <p>
-            A timer application used to track work and focus on productivity
-            with a minimal interface.
+            A simple and minimal pomodoro timer emphasizing focus on work to boost productivity.
           </p>
 
           <div class="project__links">
@@ -154,16 +236,16 @@
           </div>
 
           <div class="browser__container">
-            <img src="./img/design-components.png" alt="A collection of coded UI design components." loading="lazy" />
+            <img src="./img/design-components.png" alt="A collection of coded UI components." loading="lazy" />
           </div>
         </article>
 
         <div class="project">
           <h2 class="project__title">UI Design Components</h2>
           <p>
-            A collection of UI Design Components inspired from
-            <a href="https://www.uidesigndaily.com" target="_blank" rel="noopener">UIDesignDaily</a>
-            - <strong>Link to each component on GitHub</strong>
+            A collection of UI components inspired from
+            <a href="https://www.uidesigndaily.com" target="_blank" rel="noreferrer noopener">UIDesignDaily</a>
+            - <strong>Link to each component in GitHub README.</strong>
           </p>
 
           <div class="project__links">
@@ -182,92 +264,6 @@
             </button>
             <button class="button tag">
               <i class="fab fa-sass"></i>SCSS
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="wrapper">
-        <article class="browser">
-          <div class="browser__header">
-            <span class="browser__header-button red"></span>
-            <span class="browser__header-button yellow"></span>
-            <span class="browser__header-button green"></span>
-          </div>
-
-          <div class="browser__container">
-            <img src="./img/crowdfunding-page.png" alt="Crowdfunding Page project." loading="lazy" />
-          </div>
-        </article>
-
-        <div class="project">
-          <h2 class="project__title">Crowdfunding Page</h2>
-          <p>
-            A project
-            <a href="https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR" rel="noreferrer noopener" target="_blank"> from
-              Frontend Mentor</a> that allows users to pledge certain amounts to a creative
-            project. The UI was created with TailwindCSS utilizing a PostCSS workflow.
-          </p>
-
-          <div class="project__links">
-            <a href="https://github.com/mohammedyh/crowdfunding-page" target="_blank" rel="noopener" class="button"><i
-                class="fab fa-github"></i>GitHub</a>
-            <a href="https://mohammedyh.github.io/crowdfunding-page/public" target="_blank" rel="noopener"
-              class="button"><i class="fas fa-link"></i>Live Site</a>
-          </div>
-
-          <div class="project__tags">
-            <button class="button tag">
-              <i class="fab fa-html5"></i>HTML
-            </button>
-            <button class="button tag">
-              <i class="fab fa-css3-alt"></i>CSS
-            </button>
-            <button class="button tag">
-              <img class="tailwind-icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS icon."
-                width="30" loading="lazy" />Tailwind
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Blog Project -->
-
-      <div class="wrapper">
-        <article class="browser">
-          <div class="browser__header">
-            <span class="browser__header-button red"></span>
-            <span class="browser__header-button yellow"></span>
-            <span class="browser__header-button green"></span>
-          </div>
-
-          <div class="browser__container">
-            <img src="./img/personal-blog.png" alt="Crowdfunding Page project." loading="lazy" />
-          </div>
-        </article>
-
-        <div class="project">
-          <h2 class="project__title">Personal Blog</h2>
-          <p>
-            Built using Next.js and Tailwind CSS, I intend on using this blog to document my journey as a Web Developer.
-            Writing about things I have learned, problems I have overcome and topics of interest for all things web
-            development.
-          </p>
-
-          <div class="project__links">
-            <a href="https://blog.myhdigital.co.uk/" target="_blank" rel="noopener" class="button"><i
-                class="fas fa-link"></i>Live Site</a>
-          </div>
-
-          <div class="project__tags">
-            <button class="button tag">
-              <i class="fab fa-react"></i>React
-            </button>
-            <button class="button tag">
-              <img class="tailwind-icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS icon."
-                width="30" loading="lazy" />Tailwind
             </button>
           </div>
         </div>
