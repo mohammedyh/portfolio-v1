@@ -31,7 +31,8 @@ node_modules/
 
 ### Parcel ###
 dist/
-.cache/
+.parcel-cache/
+
 
 ### Sass ###
 .sass-cache/
