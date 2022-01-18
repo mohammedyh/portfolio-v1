@@ -5,10 +5,11 @@
   "scripts": {
     "clean": "rm -rf .cache dist",
     "dev": "npm run clean && parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html && npm run robots",
     "format": "npx prettier --write \"src/**/*.scss\"",
     "lint": "npx stylelint src/scss/**/*.scss",
-    "fix": "npx stylelint --fix src/**/*.scss"
+    "fix": "npx stylelint --fix src/**/*.scss",
+    "robots": "echo 'User-agent: Googlebot\nAllow: /' > dist/robots.txt"
   },
   "keywords": [],
   "author": "",
