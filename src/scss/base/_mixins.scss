@@ -1,37 +1,37 @@
 @use '../base/vars';
 
 @mixin mobile {
-  @media screen and (min-width: vars.$breakpoint-mobile-lower) and (max-width: vars.$breakpoint-mobile-upper) {
-    @content;
-  }
+	@media screen and (min-width: vars.$breakpoint-mobile-lower) and (max-width: vars.$breakpoint-mobile-upper) {
+		@content;
+	}
 }
 
 @mixin tablet {
-  @media screen and (min-width: vars.$breakpoint-tablet-lower) and (max-width: vars.$breakpoint-tablet-upper) {
-    @content;
-  }
+	@media screen and (min-width: vars.$breakpoint-tablet-lower) and (max-width: vars.$breakpoint-tablet-upper) {
+		@content;
+	}
 }
 
 @mixin laptop {
-  @media screen and (min-width: vars.$breakpoint-laptop-lower) and (max-width: vars.$breakpoint-laptop-upper) {
-    @content;
-  }
+	@media screen and (min-width: vars.$breakpoint-laptop-lower) and (max-width: vars.$breakpoint-laptop-upper) {
+		@content;
+	}
 }
 
 @mixin desktop {
-  @media screen and (min-width: vars.$breakpoint-desktop-lower) and (max-width: vars.$breakpoint-desktop-upper) {
-    @content;
-  }
+	@media screen and (min-width: vars.$breakpoint-desktop-lower) and (max-width: vars.$breakpoint-desktop-upper) {
+		@content;
+	}
 }
 
 @mixin large-desktop {
-  @media screen and (min-width: vars.$breakpoint-large-desktop-lower) {
-    @content;
-  }
+	@media screen and (min-width: vars.$breakpoint-large-desktop-lower) {
+		@content;
+	}
 }
 
 @mixin reduced-motion {
-  @media (prefers-reduced-motion: reduced) {
-    @content;
-  }
+	@media (prefers-reduced-motion: reduced) {
+		@content;
+	}
 }

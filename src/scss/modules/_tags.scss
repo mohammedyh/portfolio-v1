@@ -1,33 +1,33 @@
 .project__tags {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 
-  .tag {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.4rem 1rem;
-    background: hsl(0, 0%, 74%);
-    box-shadow: 5px 5px 19px #363636, -5px -5px 19px #525252;
-    font-size: 1.7rem;
+	.tag {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.4rem 1rem;
+		background: hsl(0, 0%, 74%);
+		box-shadow: 5px 5px 19px #363636, -5px -5px 19px #525252;
+		font-size: 1.7rem;
 
-    .fab.fa-html5 {
-      color: #e34f26;
-    }
-    .fab.fa-css3-alt {
-      color: #1572b6;
-    }
-    .fab.fa-js {
-      color: #e7d12c;
-    }
-    .fab.fa-react {
-      color: darken(#61dafb, 20%);
-    }
-    .fab.fa-sass {
-      color: #f783ac;
-    }
-    .tailwind-icon {
-      margin-right: 0.8rem;
-    }
-  }
+		.fab.fa-html5 {
+			color: #e34f26;
+		}
+		.fab.fa-css3-alt {
+			color: #1572b6;
+		}
+		.fab.fa-js {
+			color: #e7d12c;
+		}
+		.fab.fa-react {
+			color: darken(#61dafb, 20%);
+		}
+		.fab.fa-sass {
+			color: #f783ac;
+		}
+		.tailwind-icon {
+			margin-right: 0.8rem;
+		}
+	}
 }

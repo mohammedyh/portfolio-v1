@@ -2,49 +2,53 @@
 @use '../base/mixins';
 
 .work {
-  &__wrapper {
-    display: grid;
-    margin: 0 6.5rem;
-    gap: 5rem;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    @include mixins.mobile {
-      display: flex;
-      flex-direction: column;
-      margin: 8rem 1.5rem;
-    }
+	a {
+		border-bottom: 2.5px solid vars.$accent-color;
+	}
 
-    .wrapper {
-      max-width: 75rem;
-      margin: 4rem auto;
-      @include mixins.mobile {
-        margin: -2rem auto 6rem;
-      }
+	&__wrapper {
+		display: grid;
+		margin: 0 6.5rem;
+		gap: 5rem;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		@include mixins.mobile {
+			display: flex;
+			flex-direction: column;
+			margin: 8rem 1.5rem;
+		}
 
-      .project {
-        text-align: left;
+		.wrapper {
+			max-width: 75rem;
+			margin: 4rem auto;
+			@include mixins.mobile {
+				margin: -2rem auto 6rem;
+			}
 
-        &__title {
-          margin: 1.5rem 0;
-          font-size: 2.6rem;
-          letter-spacing: 0.05rem;
-        }
+			.project {
+				text-align: left;
 
-        p {
-          font-size: 1.8rem;
-          line-height: 1.5;
-          a {
-            color: vars.$accent-color;
+				&__title {
+					margin: 1.5rem 0;
+					font-size: 2.6rem;
+					letter-spacing: 0.05rem;
+				}
 
-            &:hover {
-              color: darken(vars.$accent-color, 18%);
-            }
-          }
-        }
+				p {
+					font-size: 1.8rem;
+					line-height: 1.5;
+					a {
+						color: vars.$accent-color;
 
-        &__links {
-          margin-top: 1.5rem;
-        }
-      }
-    }
-  }
+						&:hover {
+							color: darken(vars.$accent-color, 18%);
+						}
+					}
+				}
+
+				&__links {
+					margin-top: 1.5rem;
+				}
+			}
+		}
+	}
 }
