@@ -9,21 +9,23 @@
     "format": "npx prettier --write \"src/**/*.scss\"",
     "lint": "npx stylelint src/scss/**/*.scss",
     "fix": "npx stylelint --fix src/**/*.scss",
-    "robots": "echo 'User-agent: Googlebot\nAllow: /' > dist/robots.txt"
+    "robots": "echo 'User-agent: Googlebot\nAllow: /' > dist/robots.txt",
+    "update:deps": "ncu -u && npm i"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0",
-    "parcel": "^2.0.0",
-    "prettier": "^2.2.1",
-    "sass": "^1.32.8",
-    "stylelint": "^13.13.1",
+    "@parcel/transformer-sass": "^2.5.0",
+    "npm-check-updates": "^12.5.11",
+    "parcel": "^2.5.0",
+    "prettier": "^2.6.2",
+    "sass": "^1.51.0",
+    "stylelint": "^14.8.2",
     "stylelint-config-idiomatic-order": "^8.1.0",
-    "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-standard": "^22.0.0",
-    "stylelint-prettier": "^1.2.0",
-    "stylelint-scss": "^3.19.0"
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.2.0"
   }
 }
