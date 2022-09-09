@@ -14,19 +14,26 @@
 		.fab.fa-html5 {
 			color: #e34f26;
 		}
+
 		.fab.fa-css3-alt {
 			color: #1572b6;
 		}
+
 		.fab.fa-js {
 			color: #e7d12c;
 		}
+
 		.fab.fa-react {
 			color: darken(#61dafb, 20%);
 		}
+
 		.fab.fa-sass {
 			color: #f783ac;
 		}
-		.tailwind-icon {
+
+		.tailwind-icon,
+		.typescript-icon,
+		.chakra-icon {
 			margin-right: 0.8rem;
 		}
 	}
