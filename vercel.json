@@ -4,6 +4,10 @@
 			"source": "/(.*)",
 			"headers": [
 				{
+					"key": "Accept-Encoding",
+					"value": "br"
+				},
+				{
 					"key": "X-Content-Type-Options",
 					"value": "nosniff"
 				},
