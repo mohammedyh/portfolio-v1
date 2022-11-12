@@ -1,20 +1,6 @@
 @use 'vars';
 @use 'mixins';
 
-@font-face {
-	font-family: 'Plus Jakarta Sans';
-	src: url('../fonts/PlusJakartaSans-Regular.ttf') format('truetype');
-	font-style: normal; /* stylelint-disable-line order/properties-order */
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: 'Plus Jakarta Sans';
-	src: url('../fonts/PlusJakartaSans-Medium.ttf') format('truetype');
-	font-style: normal; /* stylelint-disable-line order/properties-order */
-	font-weight: 500;
-}
-
 *,
 *::before,
 *::after {
