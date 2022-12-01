@@ -25,6 +25,7 @@ html {
 body {
 	font-family: vars.$font-primary;
 	font-size: 2rem;
+	text-rendering: optimizeSpeed;
 }
 
 a {

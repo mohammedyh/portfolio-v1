@@ -15,7 +15,7 @@
 	&__title {
 		margin-bottom: 2rem;
 		color: vars.$text-primary;
-		font-size: clamp(3.5rem, 3vw, 7rem);
+		font-size: clamp(3.5rem, 3.6vw, 7rem);
 		font-weight: bold;
 		letter-spacing: 1px;
 		text-align: center;
@@ -23,7 +23,7 @@
 
 	&__subtitle {
 		color: vars.$text-primary;
-		font-size: clamp(2.2rem, 2vw, 3.5rem);
+		font-size: clamp(2.2rem, 2.4vw, 3.5rem);
 	}
 
 	&__links-container {
