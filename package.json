@@ -1,31 +1,32 @@
 {
-  "name": "personal-site",
-  "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "clean": "rm -rf .cache dist",
-    "dev": "npm run clean && parcel src/index.html",
-    "build": "parcel build src/index.html && npm run robots",
-    "format": "npx prettier --write \"src/**/*.scss\"",
-    "lint": "npx stylelint src/scss/**/*.scss",
-    "fix": "npx stylelint --fix src/**/*.scss",
-    "robots": "echo 'User-agent: Googlebot\nAllow: /' > dist/robots.txt",
-    "update:deps": "ncu -u && npm i"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.5.0",
-    "npm-check-updates": "^12.5.11",
-    "parcel": "^2.5.0",
-    "prettier": "^2.6.2",
-    "sass": "^1.51.0",
-    "stylelint": "^14.8.2",
-    "stylelint-config-idiomatic-order": "^8.1.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^25.0.0",
-    "stylelint-prettier": "^2.0.0",
-    "stylelint-scss": "^4.2.0"
-  }
+	"name": "personal-site",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"clean": "rm -rf .parcel-cache dist",
+		"dev": "npm run clean && parcel src/index.html",
+		"build": "parcel build src/index.html && npm run robots && npm run sitemap",
+		"format": "npx prettier --write \"src/**/*.scss\"",
+		"lint": "npx stylelint src/scss/**/*.scss",
+		"fix": "npx stylelint --fix src/**/*.scss",
+		"update:deps": "ncu -u && npm i",
+		"robots": "cp robots.txt dist/robots.txt",
+		"sitemap": "cp sitemap.xml dist/sitemap.xml"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.8.2",
+		"npm-check-updates": "^16.6.2",
+		"parcel": "^2.8.2",
+		"prettier": "^2.8.1",
+		"sass": "^1.57.1",
+		"stylelint": "^14.16.0",
+		"stylelint-config-idiomatic-order": "^9.0.0",
+		"stylelint-config-prettier": "^9.0.4",
+		"stylelint-config-standard": "^29.0.0",
+		"stylelint-prettier": "^2.0.0",
+		"stylelint-scss": "^4.3.0"
+	}
 }
