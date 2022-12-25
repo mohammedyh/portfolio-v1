@@ -10,6 +10,7 @@
 			display: grid;
 			grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
 			place-content: center;
+			font-size: 1.7rem;
 		}
 		@include mixins.tablet {
 			display: grid;
@@ -23,6 +24,9 @@
 
 			li {
 				margin: 5rem;
+				@include mixins.mobile {
+					margin: 3rem 5rem;
+				}
 			}
 		}
 	}

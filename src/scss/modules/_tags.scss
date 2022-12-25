@@ -1,3 +1,6 @@
+@use '../base/vars';
+@use '../base/mixins';
+
 .project__tags {
 	display: flex;
 	flex-wrap: wrap;
@@ -10,6 +13,9 @@
 		background: hsl(0, 0%, 74%);
 		box-shadow: 5px 5px 19px #363636, -5px -5px 19px #525252;
 		font-size: 1.7rem;
+		@include mixins.mobile {
+			font-size: 1.5rem;
+		}
 
 		.fab.fa-html5 {
 			color: #e34f26;

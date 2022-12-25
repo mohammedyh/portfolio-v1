@@ -7,6 +7,13 @@
 	font-size: 2.2rem;
 	text-align: center;
 
+	&__title {
+		font-size: 3rem;
+		@include mixins.mobile {
+			font-size: 2.6rem;
+		}
+	}
+
 	&__title::after {
 		display: block;
 		width: 4.2rem;
@@ -24,7 +31,7 @@
 		margin: auto;
 		line-height: 1.6;
 		@include mixins.mobile {
-			font-size: 2rem;
+			font-size: 1.7rem;
 			line-height: 1.9;
 		}
 		@include mixins.large-desktop {
