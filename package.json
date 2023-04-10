@@ -4,11 +4,11 @@
 	"description": "",
 	"scripts": {
 		"clean": "rm -rf .parcel-cache dist",
-		"dev": "npm run clean && parcel src/index.html",
-		"build": "parcel build src/index.html && npm run robots && npm run sitemap",
-		"format": "npx prettier --write \"src/**/*.scss\"",
-		"lint": "npx stylelint src/scss/**/*.scss",
-		"fix": "npx stylelint --fix src/**/*.scss",
+		"dev": "pnpm clean && parcel src/index.html",
+		"build": "parcel build src/index.html && pnpm robots && pnpm sitemap",
+		"format": "pnpm exec prettier --write \"src/**/*.scss\"",
+		"lint": "pnpm exec stylelint src/scss/**/*.scss",
+		"fix": "pnpm exec stylelint --fix src/**/*.scss",
 		"update:deps": "ncu -u && npm i",
 		"robots": "cp robots.txt dist/robots.txt",
 		"sitemap": "cp sitemap.xml dist/sitemap.xml"
@@ -17,16 +17,19 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"@parcel/transformer-sass": "^2.8.2",
-		"npm-check-updates": "^16.6.2",
-		"parcel": "^2.8.2",
-		"prettier": "^2.8.1",
-		"sass": "^1.57.1",
-		"stylelint": "^14.16.0",
+		"@parcel/transformer-sass": "^2.8.3",
+		"npm-check-updates": "^16.10.7",
+		"parcel": "^2.8.3",
+		"prettier": "^2.8.7",
+		"sass": "^1.61.0",
+		"stylelint": "^15.4.0",
 		"stylelint-config-idiomatic-order": "^9.0.0",
-		"stylelint-config-prettier": "^9.0.4",
-		"stylelint-config-standard": "^29.0.0",
-		"stylelint-prettier": "^2.0.0",
-		"stylelint-scss": "^4.3.0"
+		"stylelint-config-prettier": "^9.0.5",
+		"stylelint-config-standard": "^32.0.0",
+		"stylelint-prettier": "^3.0.0",
+		"stylelint-scss": "^4.6.0"
+	},
+	"dependencies": {
+		"gsap": "^3.11.5"
 	}
 }
