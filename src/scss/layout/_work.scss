@@ -2,6 +2,7 @@
 @use '../base/mixins';
 
 .work {
+	overflow: hidden;
 	a {
 		border-bottom: 2.5px solid vars.$accent-color;
 	}

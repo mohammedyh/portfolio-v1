@@ -5,13 +5,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline({ defaults: { ease: Expo.easeOut } });
 tl.from('.main__container', { scale: 0.6, duration: 2, opacity: 0 })
-	.from('.logo-container', { duration: 1, y: -40, opacity: 0 }, '-=1.4')
-	.from('.nav__container ul li', { duration: 0.5, y: -40, opacity: 0, stagger: 0.2 }, '-=1')
+	.from('.logo-container', { duration: 0.8, y: -40, opacity: 0 }, '-=1.4')
+	.from('.nav__container ul li', { duration: 0.5, y: -40, opacity: 0, stagger: 0.15 }, '-=1')
 	.from(
 		'.hero__title',
 		{
-			duration: 1.75,
-			y: -40,
+			duration: 1.5,
+			y: -25,
 			opacity: 0,
 		},
 		'-=0.5'
@@ -20,42 +20,45 @@ tl.from('.main__container', { scale: 0.6, duration: 2, opacity: 0 })
 		'.hero__subtitle',
 		{
 			duration: 1.4,
-			y: -40,
+			y: -25,
 			opacity: 0,
 		},
-		'-=1.3'
+		'-=1.2'
 	)
-	.from('.hero__links-container i', { duration: 0.5, y: -20, opacity: 0, stagger: 0.15 }, '-=0.9');
+	.from('.hero__links-container i', { duration: 0.5, y: -20, opacity: 0, stagger: 0.15 }, '-=1');
 
-const tl2 = gsap.timeline({
-	scrollTrigger: {
-		trigger: '#work',
-		start: 'top center',
-	},
+const projects = document.querySelectorAll('article.wrapper');
+projects.forEach(project => {
+	gsap.from(project, {
+		scrollTrigger: {
+			trigger: project,
+			start: 'top center',
+		},
+		duration: 1,
+		y: 40,
+		opacity: 0,
+	});
 });
 
-tl2.from('article.wrapper', { duration: 1, x: 200, opacity: 0, stagger: 0.4 });
-
-const tl3 = gsap.timeline({
+const tl2 = gsap.timeline({
 	scrollTrigger: {
 		trigger: '#about',
 		start: 'center center',
 	},
 });
 
-tl3
+tl2
 	.from('.about .section__title', { duration: 0.75, y: -40, opacity: 0 })
 	.from('.about .section__subtitle', { duration: 0.75, y: -40, opacity: 0 }, '-=0.5')
 	.from('.skills__row li', { duration: 0.3, y: -40, opacity: 0, stagger: 0.1 }, '-=0.4');
 
-const tl4 = gsap.timeline({
+const tl3 = gsap.timeline({
 	scrollTrigger: {
 		trigger: '#contact',
-		start: 'center center',
 	},
 });
 
-tl4
+tl3
 	.from('.contact .section__title', { duration: 0.75, y: -40, opacity: 0 })
 	.from('.contact .section__subtitle', { duration: 0.75, y: -40, opacity: 0 }, '-=0.5')
 	.from('.contact__btn', { y: -40, opacity: 0 }, '-=0.5');
