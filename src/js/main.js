@@ -1,8 +1,17 @@
-import { inject } from '@vercel/analytics/*';
 import { Expo, gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-inject({ mode: 'production' });
+const analytics = document.createElement('script');
+analytics.setAttribute('defer', '');
+
+if (window.location.host === 'mohammedcodes.dev') {
+	analytics.setAttribute('src', 'https://mohammedcodes.dev/_vercel/insights/script.js');
+	document.head.append(analytics);
+} else if (window.location.host === 'myhdigital.co.uk') {
+	analytics.setAttribute('src', 'https://myhdigital.co.uk/_vercel/insights/script.js');
+	document.head.append(analytics);
+}
+
 
 gsap.registerPlugin(ScrollTrigger);
 
