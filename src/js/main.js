@@ -1,5 +1,8 @@
-import { gsap, Expo } from 'gsap';
+import { inject } from '@vercel/analytics/*';
+import { Expo, gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+inject({ mode: 'production' });
 
 gsap.registerPlugin(ScrollTrigger);
 
