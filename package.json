@@ -7,8 +7,8 @@
 		"dev": "pnpm clean && parcel src/index.html",
 		"build": "parcel build src/index.html && pnpm robots && pnpm sitemap",
 		"format": "pnpm exec prettier --write \"src/**/*.scss\"",
-		"lint": "pnpm exec stylelint src/scss/**/*.scss",
-		"fix": "pnpm exec stylelint --fix src/**/*.scss",
+		"lint": "pnpm exec stylelint \"src/scss/**/*.scss\"",
+		"fix": "pnpm exec stylelint --fix \"src/**/*.scss\"",
 		"update:deps": "ncu -u && pnpm i",
 		"robots": "cp robots.txt dist/robots.txt",
 		"sitemap": "cp sitemap.xml dist/sitemap.xml"

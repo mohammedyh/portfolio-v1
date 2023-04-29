@@ -1,6 +1,30 @@
 @use 'vars';
 @use 'mixins';
 
+@font-face {
+	font-display: swap;
+	font-family: 'Plus Jakarta Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/src/fonts/PlusJakartaSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Plus Jakarta Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: url('/src/fonts/PlusJakartaSans-Medium.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Plus Jakarta Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: url('/src/fonts/PlusJakartaSans-SemiBold.woff2') format('woff2');
+}
+
 *,
 *::before,
 *::after {
@@ -25,8 +49,7 @@ html {
 body {
 	font-family: vars.$font-primary;
 	font-size: 2rem;
-	text-rendering: optimizeSpeed;
-	font-display: swap;
+	text-rendering: optimizespeed;
 }
 
 a {

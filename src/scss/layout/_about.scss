@@ -8,9 +8,9 @@
 		margin-top: 2rem;
 		@include mixins.mobile {
 			display: grid;
+			font-size: 1.7rem;
 			grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
 			place-content: center;
-			font-size: 1.7rem;
 		}
 		@include mixins.tablet {
 			display: grid;

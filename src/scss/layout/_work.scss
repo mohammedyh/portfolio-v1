@@ -3,6 +3,7 @@
 
 .work {
 	overflow: hidden;
+
 	a {
 		border-bottom: 2.5px solid vars.$accent-color;
 	}
@@ -43,6 +44,7 @@
 					@include mixins.mobile {
 						font-size: 1.7rem;
 					}
+
 					a {
 						color: vars.$accent-color;
 
