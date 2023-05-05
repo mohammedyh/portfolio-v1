@@ -1,7 +1,4 @@
 {
-	"name": "personal-site",
-	"version": "1.0.0",
-	"description": "",
 	"scripts": {
 		"clean": "rimraf .parcel-cache dist",
 		"dev": "pnpm clean && parcel src/index.html",
