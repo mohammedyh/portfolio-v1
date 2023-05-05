@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"scripts": {
-		"clean": "rm -rf .parcel-cache dist",
+		"clean": "rimraf .parcel-cache dist",
 		"dev": "pnpm clean && parcel src/index.html",
 		"build": "parcel build src/index.html && pnpm robots && pnpm sitemap",
 		"format": "pnpm exec prettier --write \"src/**/*.scss\"",
@@ -13,23 +13,22 @@
 		"robots": "cp robots.txt dist/robots.txt",
 		"sitemap": "cp sitemap.xml dist/sitemap.xml"
 	},
-	"keywords": [],
-	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"@parcel/transformer-sass": "^2.8.3",
 		"npm-check-updates": "^16.10.9",
 		"parcel": "^2.8.3",
 		"prettier": "^2.8.8",
+		"rimraf": "^5.0.0",
 		"sass": "^1.62.1",
-		"stylelint": "^15.6.0",
+		"stylelint": "^15.6.1",
 		"stylelint-config-idiomatic-order": "^9.0.0",
 		"stylelint-config-prettier": "^9.0.5",
 		"stylelint-config-standard": "^33.0.0",
 		"stylelint-prettier": "^3.0.0",
-		"stylelint-scss": "^4.6.0"
+		"stylelint-scss": "^5.0.0"
 	},
 	"dependencies": {
-		"@vercel/analytics": "^1.0.0"
+		"@vercel/analytics": "^1.0.1"
 	}
 }
